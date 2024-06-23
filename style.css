@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+#heading{
+    background-color: rgb(24, 23, 46);
+    line-height: 4rem;
+   color: #fff;
+   width: auto;
+}
+
+.choice:hover{
+    background-color: black;
+}
+
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    gap: 3rem;
+    width: 100%;
+}
+
+.choice{
+    height: 25vmin;
+    width: 25vmin;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 23vmin;
+    width: 23vmin;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+.score-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+}
+
+.user , .comp{
+    font-size: 5vmin;
+}
+
+#user-score , #comp-score{
+    font-size: 7vmin;
+}
+
+.msg-container{
+    margin-top: 3rem;
+  
+}
+
+#msg{
+    background-color: rgb(24, 23, 46);
+    color: rgb(255, 255, 255);
+    height: 10vmin;
+    width: 40vmin;
+    font-size: 5vmin;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.newbtn-container{
+    margin-top: 3rem;
+}
+
+.new-btn{
+    background-color:  #1679AB;
+    font-size: 5vmin;
+    border-radius: 1rem;
+    border: none;
+    height: 10vmin;
+    width: 40vmin;
+    color:  rgb(24, 23, 46); 
+}
+
+@media only screen and (max-width: 700px) {
+
+    .choice{
+        height:30vmin;
+        width: 30vmin;
+       
+    }
+    .choices{
+        height:  50vmin;
+        gap:1rem
+    }
+    
+    img{
+        height: 29vmin;
+        width: 29vmin;
+        
+    }
+    #heading{
+        font-size: 7vmin;
+    }
+
+    .score-container{
+        height:  20vmin;
+    }
+
+    .user , .comp{
+        font-size: 7vmin;
+    }
+    
+    #user-score , #comp-score{
+        font-size: 10vmin;
+    }
+
+}
